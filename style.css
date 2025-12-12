@@ -1,0 +1,183 @@
+/* the 100vh and 100vw set the size of the body to fill the viewport (screen) */
+body {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  margin: 0;
+  background-image: url("images/Stage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* build your layout */
+.custom-font {
+  font-family: "Bitcount Grid Single";
+  color: blue;
+  filter: drop-shadow(2px 2px 8px);
+}
+.top-middle {
+  height: 100%;
+  width: 70%;
+}
+.reset {
+  height: 10%;
+  width: 100%;
+}
+.top-column {
+  height: 100%;
+  width: 15%;
+  display: block;
+}
+.knob-box {
+  height: 70%;
+  width: 100%;
+}
+.text-box {
+  height: 30%;
+  width: 100%;
+}
+.row {
+  height: 45%;
+  width: 100%;
+}
+.doubles {
+  height: 100%;
+  width: 50%;
+}
+.doubles-box {
+  height: 100%;
+  width: 50%;
+  font-family: "Bitcount Grid Single";
+  color: gold;
+  filter: drop-shadow(2px 2px 8px);
+}
+.bottom-row {
+  height: 10%;
+  width: 100%;
+}
+/* this will make ALL <img> elements at most 100% of their PARENT! */
+img {
+  max-height: 95%;
+  max-width: 95%;
+}
+.bigger {
+  height: 100%;
+}
+/* this class goes on the PARENT div of the image! */
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.center-top {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+.translucent {
+  opacity: 0.5;
+}
+.hiding {
+  display: none;
+}
+.button-style {
+  filter: brightness(85%) drop-shadow(2px 8px 3px);
+}
+.button-style:hover {
+  cursor: pointer;
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+  transform: scale(1.04);
+}
+.button-style:active {
+  filter: drop-shadow(0px 0px 3px);
+  transform: scale(0.98);
+}
+.button-style1 {
+  filter: brightness(85%) drop-shadow(2px 8px 3px);
+}
+.button-style1:hover {
+  cursor: pointer;
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+  transform: scale(1.04);
+}
+.button-style1:active {
+  filter: drop-shadow(0px 0px 3px);
+  transform: scale(0.98);
+  rotate: 50deg;
+}
+.reset-button {
+  filter: brightness(85%) drop-shadow(2px 2px 3px);
+  font-size: 25px;
+  color: #ffbf00;
+}
+.reset-button:hover {
+  cursor: pointer;
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+  transform: scale(1.04);
+}
+.reset-button:active {
+  filter: drop-shadow(0px 0px 3px);
+  transform: scale(0.98);
+}
+@media only screen and (max-width: 550px) {
+  .top-column {
+    height: 100%;
+    width: 20%;
+    display: none;
+  }
+  .top-middle {
+    height: 100%;
+    width: 100%;
+  }
+  .doubles {
+    height: 100%;
+    width: 50%;
+    display: block;
+  }
+  .doubles-box {
+    height: 50%;
+    width: 100%;
+  }
+}
+
+/* colors to see divs */
+.purple {
+  background-color: #523d64;
+}
+.green {
+  background-color: #85e21f;
+}
+.orange {
+  background-color: #da6339;
+}
+.gold {
+  background-color: #d3a047;
+}
+.yellow {
+  background-color: #ffeca7;
+}
+.black {
+  background-color: #000000;
+}
+.slate {
+  background-color: #1e171f;
+}
+.dark-grey {
+  background-color: #3a3b3c;
+}
+.light-grey {
+  background-color: #d3d3d3;
+}
+.blue {
+  background-color: #1f32e2;
+}
+
+/* enhance the UX */
+/*
+img:hover {
+  cursor: pointer;
+}
+img:active {
+  transform: scale(0.95);
+}
+*/

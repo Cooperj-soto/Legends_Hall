@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="images/albert.png">
+    <title>Legends Hall</title>
+  </head >
+  <body> 
+    <div class="row center-content">
+      <div class="top-column">
+        <div class="knob-box center-content">
+          <img src="images/volume.png" class="button-style1" button onclick="volumeDown()"></button> 
+        </div>
+        <div class="text-box center-top">
+          <custom-font style="color: #FFBF00;" class="Stevie-text" id="text1">
+            VOLUME
+             DOWN
+          </custom-font>
+      </div>
+    
+    </div>
+      <div class="top-middle center-content">
+        <iframe id="player" width="100%" height="90%"
+        src="https://www.youtube.com/embed/pSAz_lVLIJo?si=S2FicXO87ah_XFDC&enablejsapi=1"
+        frameborder="0"></iframe>
+      </div>
+      <div class="top-column">
+        <div class="knob-box center-content">
+        <img src="images/volume.png" class="button-style1" button onclick="volumeUp()"></button>
+      </div>
+      <div class="text-box center-top">
+      <custom-font style="color: #FFBF00;" class="Stevie-text" id="text1">
+          VOLUME
+            UP
+        </custom-font>
+      </div>
+    </div>
+    </div>
+    <div class="row center-content">
+      <div class="doubles center-content" id="">
+        <div class="doubles-box center-content" id="Stevie-text">
+          <img src="images/stevie.png" class="button-style" onclick="changeVideostevie()" id="srv"/>
+          <p id="stevie-text" class="hiding"> Stevie Ray Vaughan was a young blues rock guitarist that rose to fame in the 80s due to his intense playing style and powerful vocals The guitar that you clicked was his signature guitar named First wife </p>
+        </div>
+        <div class="doubles-box center-content" id="Albert-text">
+          <img src="images/albert.png" class="button-style" onclick="changeVideoalbert()" id="lucy"/>
+          <p id="albert-text" class="hiding"> Albert King a blues guitarist that was known for his unique left handed playing style and upside string orientation a true performer and talent of his time </p>
+        </div>
+      </div>
+      <div class="doubles center-content" id="">
+        <div class="doubles-box  center-content" id="Freddie-text">
+          <img src="images/freddie.png" class="button-style" onclick="changeVideofreddie()" id="freddie"/>
+          <p id="freddie-text" class="hiding"> Freddie King was a blues guitarist that was known for his powerful voice and soulful finger picking an amazing player that earned the tile KING. The guitar you clicked on was his main and is called the ES-335
+          </p>
+        </div>
+        <div class="doubles-box  center-content" >
+          <img src="images/collins.png" class="button-style " onclick="changeVideocollins()" id="collins"/>
+          <p id="collins-text" class="hiding"> Albert Collins was a Texas born blues guitarist known for his unique capo placement and powerful finger picking. He had many nicknames such as the ICEMAN or the MASTER OF THE TELECASTER
+          </p>
+        </div>
+    </div>
+  </div>
+    <div class="bottom-row center-content">
+    <p class="reset-button" onclick="reset()"> "RESET" </p>
+    </div>
+    <audio src="sounds/Albert.wav" type="audio/mp3" id="Albert"></audio>
+    <audio src="sounds/SRV.wav" type="audio/mp3" id="Stevie"></audio>
+    <audio src="sounds/Collins.wav" type="audio/mp3" id="AC"></audio>
+    <audio src="sounds/FreddieK.wav" type="audio/mp3" id="FreddieK"></audio>
+    <!-- this is an audio file you can play using JavaScript -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
